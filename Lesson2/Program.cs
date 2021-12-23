@@ -28,7 +28,7 @@ namespace Lesson2
             string MaximalT = Console.ReadLine();
             double MaxT = Convert.ToDouble(MaximalT);
             double avarage = (MinT + MaxT) / 2;
-            Console.WriteLine($"Средняя температура равна  {avarage} градусов");
+            Console.WriteLine($"Средняя температура равна  {avarage} градусам.");
             Console.WriteLine("Введите порядковый номер месяца");
             string Month = Console.ReadLine();
             int month = Convert.ToInt32(Month);
@@ -36,11 +36,11 @@ namespace Lesson2
             Console.WriteLine("Текущий месяц - " + outMonth);
             if ( month % 2 ==0)
             {
-                Console.WriteLine("Число четное");
+                Console.WriteLine($"Число {month} четное.");
             }
             else
             {
-                Console.WriteLine("Число не четое");
+                Console.WriteLine($"Число {month} не четое.");
             }
             if (((avarage > 0) && (month == 12) || (month == 1) || (month == 2)))
             {
